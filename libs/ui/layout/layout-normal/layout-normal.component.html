@@ -1,0 +1,10 @@
+<dtfe-header-normal (menuClick)="drawer.toggle()"></dtfe-header-normal>
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <ng-content select="[sidemenu]"><p>Menu</p></ng-content>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+    <ng-content select="[content]"><p>Content</p></ng-content>
+  </div>
+</mat-drawer-container>
