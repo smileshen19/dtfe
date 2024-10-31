@@ -2,7 +2,10 @@
   "name": "@dtfe/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build-image": "npx nx build demo && docker build -t my-angular-app:latest .",
+    "run-container":"docker run -d -p 80:80 my-angular-app:latest"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.1.0",
